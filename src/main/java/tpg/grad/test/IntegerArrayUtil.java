@@ -8,9 +8,9 @@ public class IntegerArrayUtil {
 	 * @param intArray whose elements are to be averaged
 	 * @return the median value of the given integer array.
 	 */
-	public static int calculateMedianValue(int[] intArray)
+	public static double calculateMedianValue(int[] intArray)
 	{
-		int result = 0;
+		double result = 0;
 		
 		if (intArray != null &&  intArray.length > 0)
 		{
@@ -22,7 +22,7 @@ public class IntegerArrayUtil {
 				total += intArray[i];
 			}
 			
-			result = total / size;
+			result = (double) total / size;
 		}
 		else
 		{
